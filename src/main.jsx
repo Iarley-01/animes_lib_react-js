@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import Home from './pages/home';
-import Anime from './pages/anime';
+import Movie from './pages/movie';
 import Search from './pages/search';
 import './index.css';
 
@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />}/>
-          <Route path="anime/:id" element={<Anime />}/>
+          <Route path="anime/:id" element={<Movie />}/>
           <Route path="search" element={<Search />}/>
         </Route>
       </Routes>
